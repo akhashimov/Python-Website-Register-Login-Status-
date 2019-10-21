@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='geee.css')}}">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static',filename='favicon.ico')}}" />
+</head>
+<body>
+ <div class="logo" >
+     <a class="logo" href="/">
+        <img src="{{url_for('static',filename='2.png')}}" width="30%" height="30%" alt="Al-Ferghani University Main Page">
+     </a>
+ </div>
+<div class="content-section">
+{%block info%}{%endblock%}
+</div>
+<div class="footer">
+    <span>Copyright ©, Alex Khan, 2019,LLC. All rights reserved.</span>
+</div>
+</body>
+</html>

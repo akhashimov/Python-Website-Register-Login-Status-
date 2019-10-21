@@ -1,0 +1,43 @@
+{%extends 'base_pa.html%}
+{%block content%}Upload documents|X university{%endblock%}{%block info%}
+<h2> Uploaded files</h2>
+<form class="ps-reg-form" action="/reg-check2/" method="post"><br>
+<label>Academic Lyceum/Vocational College Diploma</label><br>
+<br><input name="diploma" required placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" accept=".jpg,.jpeg,.pdf,.png" name="diploma" type="file" ><br>
+<div>
+{%for item in {{usr_id}}\diploma%}
+    <a href="/file/{{usr_id}}/diploma/{{item.name}}">{{item.name}}</a>
+{%endfor%}
+</div>
+<label>Transcript to the diploma</label><br>
+<input name="transcript" required multiple placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" accept=".jpg,.jpeg,.pdf,.png" name="transcript" type="file"><br>
+
+<div>
+{%for item in files_list%}
+    <a href="/file/transcript/{{item}}">{{item}}</a>
+{%endfor%}
+</div>
+<label>IELTS Certificates</label><br>
+<input name="ielts" multiple accept=".jpg,.jpeg,.pdf,.png" type="file"><br>
+<div>
+{%for item in files_list%}
+    <a href="/file/{{usr_id}}/ielts/{{item.name}}">{{item.name}}</a>
+{%endfor%}
+</div>
+<label>TOEFL Scores</label><br>
+<input name="toefl" accept=".jpg,.jpeg,.pdf,.png" type="file" multiple><br>
+<div>
+{%for item in files_list%}
+    <a href="/file/{{usr_id}}/toefl/{{item.name}}">{{item.name}}</a>
+{%endfor%}
+</div>
+<label>SAT Results</label><br>
+<input name="sat" multiple placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" accept=".jpg,.jpeg,.pdf,.png" name="sat" type="file"><br>
+<div>
+{%for item in files_list}
+    <a href="/file/{{usr_id}}/sat">{{item.name}}</a>
+{%endfor%}
+</div>
+<input type="submit" value="Save">
+</form>
+{%endblock%}

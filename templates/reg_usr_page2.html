@@ -1,0 +1,30 @@
+{% extends'base_pa.html'%}
+
+{% block title%}Academic|Registration{%endblock%}
+{% block info%}
+<h1>Perspective Student Registration</h1>
+<form enctype="multipart/form-data" class="ps-reg-form" action="/reg_check2" method="post">
+
+    <label>Academic Lyceum/Vocational College Diploma</label><br>
+    <br><input name="diploma" placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" accept=".jpg,.jpeg,.pdf,.png" name="diploma" type="file"><br>
+    <br><br><label>Transcript to the diploma</label><br><br>
+    <input name="gpa" type="text" placeholder="Overall GPA"><br><br>
+    <input name="transcript" multiple placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" accept=".jpg,.jpeg,.pdf,.png" name="transcript" type="file"><br>
+    <br><br>
+    <label>IELTS Certificates</label><br><br>
+    <input name="iescore" type="text" placeholder="IELTS Overall Score"><br><br>
+    <input name="ielts" multiple accept=".jpg,.jpeg,.pdf,.png" type="file"><br><br>
+    <label>TOEFL Scores</label><br>
+    <input name="toescore" type="text" placeholder="TOEFL Overall Score" ><br><br>
+    <input name="toefl" accept=".jpg,.jpeg,.pdf,.png" type="file" multiple><br><br>
+    <label>SAT Results</label><br>
+    <input name="satscore1" type="text" placeholder="Reading Score"><br><br>
+    <input name="satscore2" type="text" placeholder="Math Score"><br><br>
+    <input name="satscore3" type="text" placeholder="Overall Score"><br><br>
+    <input name="sat" multiple placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" accept=".jpg,.jpeg,.pdf,.png" name="sat" type="file"><br>
+    <br>
+    <label>Confirm your email</label><br><br>
+    <input type="email" name="email" placeholder="Confirm your email"><br><br><br>
+    <input type="submit" value="Register">
+</form>
+{%endblock%}

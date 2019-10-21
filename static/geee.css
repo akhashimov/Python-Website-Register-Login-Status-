@@ -1,0 +1,305 @@
+@media screen and (max-width: 1366px){
+    body {
+
+        background: linear-gradient(90deg, #ff1b00, #00faff);
+        background-repeat:no-repeat;
+        height:%;
+        min-width: 100%;
+        min-height:100%;
+        }
+   div.logo {
+       height:auto;
+       margin-left:33%;
+       margin-right:33%;
+       padding-left:6.5%;
+       padding-right:6.5%;
+
+       width: 20%;
+
+   }
+    div.logo a{
+        padding-left:25%;
+        padding-right:25%;
+        margin-left:0;
+        margin-right:0;
+      }
+    div.logo a img {
+        width:50%;
+        height:auto;
+        margin:0;
+    }
+    div.logo a img:hover {
+        }
+    div.main-nav{
+        box-sizing: border-box;
+        position:relative;
+        float:left;
+        width:90%;
+        margin-left:10%;
+    }
+    ul.nav-content{
+
+        list-style-type: none;
+        padding:0;
+
+        margin-bottom:15%;
+    }
+    ul.nav-content li{
+    }
+    ul.nav-content li a{
+        box-shadow: 30px 40px 50px #373836;
+        background-color: rgba(56, 54, 53, 0.39);
+
+        text-shadow: 2px 2px 15px #000000;
+        color: rgb(255, 255, 255);
+        display:block;
+        text-decoration:none;
+        float:left;
+        width:15%;
+        padding-top:2%;
+        padding-bottom:2%;
+        padding-left:1%;
+        padding-right:1%;
+        height:auto;
+        position: relative;
+        border-radius:50px;
+        text-align: center;
+        transition-property: box-shadow,background-color,border;
+        transition-duration:  0.5s;
+
+    }
+    ul.nav-content li a:hover{
+        transform: scale(1.05);
+        box-shadow: 50px 60px 70px #373836;
+
+        background-color: rgba(0, 0, 0, 0.65);
+        transition-duration: 0.5s;
+
+
+        text-align: center;
+    }
+
+    div.footer{
+        border-top:2px solid black;
+        border-radius: 20px;
+        border-right:2px solid black;
+
+    }
+    div.footer div.footer-logo{
+        height:auto;
+        width:60%
+    }
+    div.footer div.footer-logo img{
+        display:inline;
+        height:auto;
+        width:20%;
+        margin-top:0;
+        margin-left:5%;
+    }
+    address{
+        display:inline;
+    }
+    div.footer ul{
+        list-style-type: none;
+        margin-left:20%
+    }
+    div.footer ul li{
+        display:inline;
+        align:right;
+    }
+    div.footer ul li a {
+        display:block;
+        width:auto;
+        height:auto;
+        text-decoration: none;
+        color: #fbfbfb;
+        text-shadow: 0 0 5px #0913ff;
+        background-color: rgba(0, 0, 0, 0.31);
+        border:1px solid rgba(0, 0, 0, 0.45);
+        border-radius:50px;
+        padding:2%;
+        float:left;
+    }
+    div.footer ul li a:hover{
+        background-color: rgba(0, 0, 0, 0.44)
+    }
+    div.footer form.search{}
+    div.footer{top-border,color, posotion:fixed,display:none;}
+
+    div.content-section {
+        height:100%;
+        margin-bottom:200px;
+        text-align:center;
+    }
+    div.login{
+        height:100%;
+        width:auto;
+        color:white;
+        font-size:;
+    }
+    form{
+        width:100%;
+        text-align: center;
+    }
+    form.personal-account{
+        width: 100%;
+        padding:auto;
+        /* margin:auto; */
+        /* padding-left: 10%; */
+    }
+    form.login-page input{
+        border:1px solid rgba(178, 44, 47, 0.16);
+        width:30%;
+        border-radius:20px;
+        background-color: rgba(55, 56, 54, 0.4);
+
+        height:50px;
+        color: #ebf3e9;
+        text-align: center;
+
+    }
+    form.personal-account input{
+        border:1px solid rgba(178, 44, 47, 0.16);
+        width: auto;
+        border-radius:20px;
+        background-color: rgba(55, 56, 54, 0.4);
+        height:50px;
+        color: #ebf3e9;
+        text-align: center;
+    }
+    form input:focus{
+        border:2px solid white;
+    }
+    div.content-section h1{
+        text-align: center;
+    }
+    div.content-section p{
+        text-align: center;
+    }
+
+    div.content-section {
+        /* text-align: center; */
+        text-decoration: none;
+        color: rgb(255, 246, 254);
+    }
+    div.content-section a {
+        display:inline-block;
+        width:auto;
+        height:auto;
+        text-decoration: none;
+        color: #fbfbfb;
+        background-color: rgba(0, 0, 0, 0.31);
+        border:1px solid rgba(0, 0, 0, 0.13);
+        transition-property: text-shadow;
+        transition-duration:  1s;
+        padding:0.5%;
+        border-radius:20px;
+        margin-top:1%;
+        margin-bottom:1%;
+
+    }
+    div.content-section a:hover{
+        transition-duration: 1s;
+        background-color: rgba(0, 0, 0, 0.44);
+        text-shadow: 0 0 5px #fffa06;
+    }
+    div.content-section ol {
+        list-style-type: none;
+
+    }
+    div.personal-info{
+        width:32%;
+        float:left;
+    }
+
+    div.scores-block{
+        width:32%;
+        float:left;
+    }
+
+
+
+    div.documents-block{
+        width:36%;
+        float:left;
+    }
+    div.password-block{
+        width:30%;
+        margin:auto;
+     }
+    #pers_acc_submit{
+        width:80%;
+        margin:auto;
+        margin-top:10%;
+        border-left:20px solid #13e9ec;
+        border-right: 20px solid #ee2b12 ;
+
+    }
+
+    div.documents-block a{
+        width:90%;
+    }
+    div.documents-block a.del-button {
+        width:5%;
+    }
+    div.login
+    h1.login
+    form
+    input.logcheck1
+    input.logcheck2
+    button.LOGSEND
+    a.regnow
+    span.new-usr
+
+    div.content-section h1 h2 h3 h4 h5 p pre article
+    table .admissions-deadlines .costs-aid .programs-available
+    em {uni }
+
+    user-reg
+    h1{text-align, font-size,font-style}
+    form.ps-reg-form{text-align, content-align, font-style;}
+    button send form
+
+    textarea{}
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width:720px){
+      div.logo {
+      margin:auto;
+    }
+
+    div.logo a img {
+        width: %;
+        height:auto;
+        margin-left:40%;
+    }
+    div.main-nav ul{
+        list-style-type: none;
+    }
+    div.main-nav ul li a {
+        text-decoration: none;
+        display:block;
+        width:100%;
+        height:1.75em;
+        border-bottom: 1px solid #ffffffa8;
+        text-align: center;
+        color: #ebf3e9;
+        border-radius: 10px;
+    }
+    div.main-nav ul li a:hover {
+        background-color: #373836;
+        transition-duration: 1s;
+    }
+
+    div.main-div ul li {
+        position: relative;
+        display: inline-block;
+    }
+    div.footer ul{
+        list-style-type: none;
+    }
+}

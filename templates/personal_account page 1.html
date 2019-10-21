@@ -1,0 +1,93 @@
+{%extends 'base_pa.html'%}
+{%block title%}Personal Account|Al-Ferghani University{%endblock%}
+{%block info%}
+<h1>Applicant account</h1>
+<form class="personal-account" action="/reg_check2" enctype="multipart/form-data" method="POST">
+    <div class= "personal-info">
+    <label>First name</label><br>
+    <input name="fname" type="text" required value="{{temporarydict['firstname']}}"><br><br>
+    <label>Last name</label><br>
+    <input name="lname" type="text" required value="{{temporarydict['lastname']}}"><br><br>
+    <label>Date of birth</label><br>
+    <input name="dob" type="date" required value="{{temporarydict['dateofbirth']}}"><br><br>
+    <label>Email address</label><br>
+    <input name="email" type="email" required value="{{temporarydict['email']}}"><br><br>
+    <label>Street Address</label><br>
+    <input name="stradr" type="text" required value="{{temporarydict['address']}}"><br><br>
+    <label>City/Region</label><br>
+    <input placeholder="City/Region you are from" name="city/region" type="text" required value="{{temporarydict['city']}}"><br><br>
+    <label>Phone number </label><br>
+    <input name="phone1"  required value="{{temporarydict['phone1']}}"><br><br><br>
+    <label>Emergency phone number</label><br><br>
+    <input name="phone2"  required value="{{temporarydict['phone2']}}"><br><br><br>
+    </div>
+    <div class="scores-block">
+    <label>Overall GPA</label><br>
+    <input name="Overall GPA" type="text" value="{{acad_dict['gpa']}}" ><br><br>
+    <label>IELTS Score</label><br>
+    <input name="iescore" type="text" placeholder="IELTS Overall Score" value="{{acad_dict['ielts_overall']}}"><br><br>
+    <label>TOEFL Score</label><br>
+    <input name="toescore" type="text" placeholder="TOEFL Overall Score" value="{{acad_dict['toefl_overall']}}" ><br><br>
+    <label>SAT Reading Score</label><br>
+    <input name="satscore1" type="text" placeholder="Reading Score" value="{{acad_dict['sat_ebrw']}}"><br><br>
+    <label>SAT Mathematics score</label><br>
+    <input name="satscore2" type="text" placeholder="Math Score"  value="{{acad_dict['sat_math']}}"><br><br>
+    <label>SAT Overall score</label><br>
+    <input name="satscore3" type="text" placeholder="Overall Score"  value="{{acad_dict['sat_overall']}}"><br><br>
+    </div>
+    
+   <div class = "documents-block">
+   <label>Academic Lyceum/Vocational College Diploma</label><br>
+    <br><input name="diploma" placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" accept=".jpg,.jpeg,.pdf,.png" name="diploma" type="file" enctype="multipart/form-data" ><br>
+    <div>
+    {%for item in files_list1%}
+        <a href="/file/{{usr_id}}/diploma/{{item}}">{{item}}</a>
+        <a class="del-button" href="/file_del/{{usr_id}}/diploma/{{item}}"><button>X</button></a>
+    {%endfor%}
+    </div>
+    <label>Transcript to the diploma</label><br>
+    <input name="transcript" multiple placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" accept=".jpg,.jpeg,.pdf,.png"  type="file" enctype="multipart/form-data"><br>
+
+    <div>
+    {%for item in files_list2%}
+        <a href="/file/{{usr_id}}/transcript/{{item}}">{{item}}</a>
+        <a class="del-button" href="/file_del/{{usr_id}}/transcript/{{item}}"><button>X</button></a>
+    {%endfor%}
+    </div>
+    <label>IELTS Certificates</label><br>
+    <input name="ielts" multiple accept=".jpg,.jpeg,.pdf,.png" type="file" enctype="multipart/form-data"><br>
+    <div>
+    {%for item in files_list3%}
+        <a href="/file/{{usr_id}}/ielts/{{item}}">{{item}}</a>
+        <a class="del-button" href="/file_del/{{usr_id}}/ielts/{{item}}"><button>X</button></a>
+    {%endfor%}
+    </div>
+    <label>TOEFL Scores</label><br>
+    <input name="toefl" accept=".jpg,.jpeg,.pdf,.png" type="file" multiple enctype="multipart/form-data"><br>
+    <div>
+    {%for item in files_list4%}
+        <a href="/file/{{usr_id}}/toefl/{{item}}">{{item}}</a>
+        <a class="del-button" href="/file_del/{{usr_id}}/toefl/{{item}}"><button>X</button></a>
+    {%endfor%}
+    </div>
+    <label>SAT Results</label><br>
+    <input name="sat" multiple placeholder="Scan copy of the document(.jpg,.jpeg,.pdf,.png)" enctype="multipart/form-data" accept=".jpg,.jpeg,.pdf,.png" name="sat" type="file"><br>
+    <div>
+    {%for item in files_list5%}
+        <a href="/file/{{usr_id}}/sat/{{item}}">{{item}}</a>
+        <a class="del-button" href="/file_del/{{usr_id}}/sat/{{item}}"><button>X</button></a>
+    {%endfor%}
+    </div>
+    </div>
+    <div class="password-block">
+    <label>New password(if you want to change your password)</label><br>
+    <input name="password" type="password" autocomplete="off" ><br><br>
+    <label> Your old password</label><br>   
+    <input name="password-old" type="password" autocomplete="off"><br><br>
+    <label>Confirm your new password</label><br>
+    <input name="password-conf" type="password" autocomplete="off" ><br><br>
+    </div>
+<input id="pers_acc_submit" type="submit" value="Save">
+
+</form>
+{%endblock%}

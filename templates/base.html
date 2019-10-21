@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='geee.css')}}">
+    <link rel="stylesheet" href="../static/geee.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico" />
+
+</head>
+<body>
+
+<div class="header logo">
+    <a href="/">
+         <img alt="Al-Ferghani university" src="{{url_for('static',filename='2.png')}}" >
+    </a>
+</div>
+<div class="main-nav">
+    <ul class = "nav-content">
+        <li>
+            <a class="first-li" href="/why-ALU">Why Al-Ferghani University?</a>
+        </li>
+         <li>
+            <a href="/programs">Programs Available</a>
+        </li>
+        <li>
+            <a href="/admission">Admission information</a>
+        </li>
+        <li>
+            <a href="/tuition-scholarships">Costs and Aid</a>
+        </li>
+        <li >
+            <a class="last-li" href="/login">Login/Register</a>
+        </li>
+
+    </ul>
+</div>
+
+<div class="content-section">
+{%block content%}{%endblock%}
+</div>
+<div class="footer">
+    <div class="footer-logo" >
+        
+        <img align="left" src="{{url_for('static',filename='2.png')}}" alt="brand logo">
+    </div>
+    <ul class="footer info">
+
+        <li>
+            <form class="search"></form>
+        </li>
+        <li>
+            <address>
+                22/4 Sayilgoh street<br>
+                Ferghana city<br>
+                Uzbekistan<br>
+                150100<br>
+            </address>
+        </li>
+        <li>
+             <br>Phone: +998-xx-xxx-xx-xx<br>
+                Email: globusuni@gmail.com<br>
+
+
+        </li>
+        <li>
+            <a href="/about-GU">About GU</a>
+        </li>
+        <li>
+            <a href="login-2">Employee/Institution Login</a>
+        </li><br><br><br><br>
+        <li>
+            <span>Copyright ©, Alex Khan, 2019,LLC. All rights reserved.</span>
+        </li>
+     </ul>
+</div>
+    <!-- brand icon
+    about us
+    employee login
+    social media widgets
+    site search
+    phone
+    address - google map icon
+    -->
+</div>
+
+</body>
+</html>

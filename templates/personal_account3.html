@@ -1,0 +1,12 @@
+{%extends 'base_pa.html'%}
+{%block title%}Personal Account|Al-Ferghani University{%endblock%}
+{%block info%}
+<h1>Applicant account</h1>
+<form class="ps-reg-form" action="/action_page.php" method="post">
+    <h2>Motivation letter</h2>
+    <textarea class="motiv-letter" type="text" style="width:80%" rows="20"></textarea>
+    <h2>Your application payment check photo</h2>
+    <input class="payment" type="file" accept=".pdf,.jpg,.jpeg,.png">
+</form>
+<button type="submit">Save/Submit Application</button>
+{%endblock%}

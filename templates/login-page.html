@@ -1,0 +1,31 @@
+<!--paragraph-->
+<!--forma-->
+<!--forma-->
+<!--button-->
+<!--reg link-->
+<!--capcha-->
+<!--navbar-->
+{%extends 'base_pa.html'%}
+{%block title%}Login|Al-Ferghani University
+{%endblock%}
+{%block info%}
+<div class="login">
+ <h1 class="login">
+    Login
+</h1>
+    <br>
+    <form action="/personal_account/" class="login-page"  method="POST">
+  E-mail:<br>
+        <input type="email" name="logcheck1" required><br>
+  Password:<br>
+        <input type="password" name="logcheck2" required><br>
+        <br><br>
+        <input  id="login-button" type="submit" value="Login">
+    </form>
+    <br>
+    <div>Are you a new user ?  </div><a class="regnow" href="/register-user" alt="Register Now">Register now</a>
+</div>
+
+{%endblock%}
+
+
